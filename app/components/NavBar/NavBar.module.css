@@ -1,55 +1,40 @@
 .nav{
     display: flex;
-    position: relative;
+    position: sticky;
     z-index: 10;
-    padding: 20px 10px;
+    padding: 20px 15px;
     flex-direction: column;
     background-color: white;
-    border-right: 1px solid rgb(107, 107, 107);
+    border-right: 1px solid rgb(143, 143, 143);
     height: 100vh;
-}
-
-.search{
-    display: flex;
-    align-items: center;
-    padding: 10px 15px;
-    border: 1px solid rgb(107, 107, 107);
-    border-radius: 15px;
-}
-
-.search input{
-    border: none;
-    margin-left: 10px;
-    color: rgb(107, 107, 107);
-}
-
-.search input:focus{
-    border: none;
-    outline: none;
-}
-
-.icon{
-    width: 15px;
-    color: rgb(107, 107, 107);
+    transition: 0.5s;
+    width: 15vw;
 }
 
 .logo{
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.logo svg{
+    color: #AD241B;
+    cursor: pointer;
+    height: 20px;
 }
 
 .logo small{
     color: black;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.0rem;
 }
 
 .items{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-top: 30px;
+    height: 60%;
 }
 
 .items a{
@@ -61,34 +46,45 @@
 
 .iconActive{
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .iconInactive{
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .iconActive svg{
-    color: red;
-    width: 15px;
+    color: #AD241B;
+    height: 23px;
 }
 
 .iconActive small{
     color: black;
-    font-weight: 500;
 }
 
 .iconInactive svg{
-    color: rgb(107, 107, 107);
-    width: 15px;
+    color: rgba(0, 0, 0, 0.336);
+    height: 23px;
+}
+
+.iconInactive:hover svg{
+    color: black;
+    transition: 0.5s;
+}
+
+.iconInactive:hover small{
+    color: black;
+    transition: 0.5s;
 }
 
 .iconInactive small{
-    color: rgb(107, 107, 107);
-    font-weight: 500;
+    color: rgba(0, 0, 0, 0.336);
 }
 
 .items small{
-    font-size: 1rem;
+    font-size: 1.0rem;
+    font-weight: 400;
     margin-left: 10px;
 }
 
